@@ -1,3 +1,4 @@
+set backspace=2
 set autoindent
 set shiftwidth=4
 set tabstop=4
@@ -19,4 +20,7 @@ set ofu=syntaxcomplete#Complete
 
 map ,d :cd %:p:h<cr>:pwd<cr>
 map ,p :w<cr>:!%:p<cr>
+vmap <C-c> "+y
+map <C-v> "+gP
+imap <C-v> <C-r>+
 
