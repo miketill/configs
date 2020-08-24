@@ -1,0 +1,13 @@
+-Fedora 32
+dnf remove calligra-*
+dnf remove kmail-*
+dnf remove firefox-75.0-1.fc32.x86_64
+dnf remove falkon-3.1.0-3.fc32.x86_64 
+dnf remove ktorrent
+
+.local/share/kscreen/<uuid> to fix the screen placement
+dnf install kernel-devel git gcc-c++ to prep for VMWare
+sudo dnf install libreoffice
+sudo dnf install lm_sensors
+.vmware/preferences
+  add mks.gl.allowBlacklistedDrivers = TRUE assuming glxinfo | grep "direct rendering" is true
